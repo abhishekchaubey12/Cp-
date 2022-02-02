@@ -1,23 +1,21 @@
 /*   Created by IntelliJ IDEA.
  *   Author: Abhishek Kumar Chaubey
  *   Date: 02/02/2022
- *   Time: 18:02
- *   File: CeilingNumber.java
+ *   Time: 18:16
+ *   File: Floor_Number.java
  */
 
 package some_Question;
 
-public class CeilingNumber {
+public class Floor_Number {
     public static void main(String[] args) {
-        int[] nums = {2, 4, 8, 12, 14, 18, 20};
-        int target = 1;
-        int ans = ceilingNumber(nums, target);
+        int[] nums = {2, 3, 5, 9, 14, 16, 18};
+        int target = 23;
+        int ans = floorNumber(nums, target);
         System.out.println(ans);
     }
 
-    // return the smallest number >= target
-    private static int ceilingNumber(int[] nums, int target) {
-
+    private static int floorNumber(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
         while (start <= end) {
@@ -30,7 +28,6 @@ public class CeilingNumber {
                 return middle;
 
         }
-        return start;
+        return end;
     }
-
 }
