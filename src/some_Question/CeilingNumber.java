@@ -10,7 +10,7 @@ package some_Question;
 public class CeilingNumber {
     public static void main(String[] args) {
         int[] nums = {2, 4, 8, 12, 14, 18, 20};
-        int target = 1;
+        int target = 22;
         int ans = ceilingNumber(nums, target);
         System.out.println(ans);
     }
