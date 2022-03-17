@@ -21,7 +21,7 @@ public class Find_The_Town_Judge {
 
             outDegree[v1] += 1;
             inDegree[v2] += 1;
-
+//
         }
         for (int i = 1; i <= n; i++) {
             if (outDegree[i] == 0 && inDegree[i] == n - 1) {
