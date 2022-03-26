@@ -65,11 +65,11 @@ public class Course_Schedule2 {
             if (recStack.contains(neighbour)) {
                 return true;
             }
-
-            traversal.add(currentVertex);
-            recStack.remove(currentVertex);
-            return false;
         }
+        traversal.add(currentVertex);
+        recStack.remove(currentVertex);
+        return false;
+    }///
+}
 
 
-    }
