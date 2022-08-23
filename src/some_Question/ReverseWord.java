@@ -23,8 +23,15 @@ public class ReverseWord {
         return reversedString.toString();
     }
 
+    //This method will reverse whole string and also the words.
+    public static String reverse(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(reverseWords("My name is Abhishek"));
+        System.out.println(reverseWords("Abhishek is good boy"));
+        System.out.println(reverse("Abhishek is good boy"));
     }
 
 }
