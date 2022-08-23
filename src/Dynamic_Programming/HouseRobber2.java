@@ -18,6 +18,7 @@ public class HouseRobber2 {
         int include = 0;
         int exclude = 0;
         int maximum = 0;
+
         for (int i = start; i < end; i++) {
             maximum = Math.max(include + nums[i], exclude);
             include = exclude;
