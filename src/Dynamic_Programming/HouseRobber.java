@@ -19,7 +19,7 @@ public class HouseRobber {
         if (currentIndex >= nums.length) {
             return 0;
         }
-        int currentKey = currentIndex;=
+        int currentKey = currentIndex;
         if (memo.containsKey(currentIndex)) {
             return memo.get(currentKey);
         }
