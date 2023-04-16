@@ -14,6 +14,7 @@ public class HouseRobber2 {
         return Math.max(robber(nums, 0, nums.length - 1), robber(nums, 1, nums.length));
     }
 
+    //i am back
     private static int robber(int[] nums, int start, int end) {
         int include = 0;
         int exclude = 0;
